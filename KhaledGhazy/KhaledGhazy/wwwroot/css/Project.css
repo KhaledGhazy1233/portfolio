@@ -1,0 +1,11 @@
+﻿.card-animate {
+    background-color: #2c2f33;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card-animate:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3); /* لون أخضر ظريف */
+    }

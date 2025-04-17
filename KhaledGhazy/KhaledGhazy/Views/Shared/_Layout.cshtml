@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - KhaledGhazy</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/HomeStyle.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/KhaledGhazy.styles.css" asp-append-version="true" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-white" href="#">KhaledGhazy</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarContent" aria-controls="navbarContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                    <ul class="navbar-nav gap-4 mb-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-controller="Home" asp-action="Index">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-controller="Project" asp-action="Index">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-controller="Education" asp-action="Index">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="bg-dark text-center text-white py-4 mt-5">
+        <div class="container">
+            <div class="mb-3">
+                <a href="tel:+201093559965" class="text-white me-3">
+                    <i class="bi bi-telephone-fill fs-4"></i>
+                </a>
+                <a href="mailto:khaledghazy1233@gmail.com" class="text-white me-3">
+                    <i class="bi bi-envelope-fill fs-4"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/khaled-ghazy-926191304/" class="text-white me-3" target="_blank">
+                    <i class="bi bi-linkedin fs-4"></i>
+                </a>
+                <a href="https://github.com/KhaledGhazy1233" class="text-white" target="_blank">
+                    <i class="bi bi-github fs-4"></i>
+                </a>
+            </div>
+            <div>
+                &copy; 2025 KhaledGhazy. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
+    <style>
+        .social-icons i {
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover i {
+            color: #0d6efd; /* لون عند الـ hover (أزرق مثلاً) */
+        }
+    </style>
+
+
+
+</body>
+</html>
