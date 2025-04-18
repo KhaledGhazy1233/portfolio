@@ -1,0 +1,71 @@
+﻿.form-card {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+    .form-card .icon {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .form-card h2 {
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+
+    .form-card p {
+        color: #cccccc;
+        margin-bottom: 25px;
+    }
+
+    .form-card form {
+        text-align: left;
+    }
+
+    .form-card label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .form-card input,
+    .form-card textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border: 1px solid #444;
+        background-color: #2b2b2b;
+        color: #fff;
+        font-size: 15px;
+    }
+
+        .form-card input::placeholder,
+        .form-card textarea::placeholder {
+            color: #aaa;
+        }
+
+    .form-card button {
+        width: 100%;
+        padding: 12px;
+        background-color: #00bcd4;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .form-card button:hover {
+            background-color: #0097a7;
+        }
